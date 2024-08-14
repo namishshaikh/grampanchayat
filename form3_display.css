@@ -1,0 +1,29 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: orange;
+    font-weight: bold;
+    color: #141414;
+  }
+  tr
+  {
+    background-color: #ffcd58;
+    color: rgb(14, 13, 13);
+    border: 2px solid white;
+  }
+  td{
+    border:2px solid white;
+  }
+  tr:hover {
+    background-color: #f5f5f5;
+    color: #df9c00;
+  }

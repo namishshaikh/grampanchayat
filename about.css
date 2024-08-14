@@ -1,0 +1,280 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* header {
+  background-color: #64a77a; 
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+}
+
+.logo {
+  margin-right: auto; 
+}
+
+.logo img {
+  height: 70px; 
+  width: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.search-bar {
+  margin-right: 20px;
+}
+
+.search-bar input {
+  border-radius: 1rem;
+  border-color: #5ca374;
+  padding: 5px;
+}
+
+.search-bar button {
+  padding: 5px 10px;
+  background-color: #555;
+  color: #dcd7d7;
+  border: none;
+  cursor: pointer;
+}
+
+.login a {
+  padding: 5px 10px;
+  background-color: #555;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+} */
+
+.box {
+  margin-top: 25px;
+  margin-left: 75px;
+  border: 2px solid #3c72f1;
+  background-color: #E0F2F1;
+  margin-right: 40px;
+  border-radius: 15px;
+  padding: 2rem;
+  width: 85%;
+}
+
+.box h1 {
+  font-size: 1.9rem;
+  color: darkblue;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.box p {
+  font-size: 1.0rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  height: 180px;
+}
+
+.text-container {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  color: #fafefb;
+  font-size: 20px;
+}
+
+.text-container h2 {
+  margin: 0;
+  padding-right: 10px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.card {
+  width: 46%;
+  height: 60%;
+  background-color: #E0F2F1;
+  border-radius: 8px;
+  border-color: #555;
+  box-shadow: 0 0 0 rgba(161, 225, 255, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+  display: flex;
+}
+
+.custom-card {
+  margin-right: 30px;
+  margin-left: -20px;
+  width: 30%;
+  height: 60%;
+  background-color: #E0F2F1;
+}
+
+.image-section {
+  flex: 1;
+  height: 100%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  overflow: hidden;
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-section {
+  flex: 1.5;
+  padding: 20px;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+footer {
+  background-color: #e09f38;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  /* Add the following to remove the space above the footer */
+  margin-top: 0;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  margin: 10px 0;
+}
+
+.social-links li {
+  margin: 0 10px;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.wrapper {
+  width: 100vw;
+  height: 25vh;
+  padding-top: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.slider {
+  padding-top: 0%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  width: 1500px;
+  height: 100px;
+  position: relative;
+  background: white;
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  overflow: hidden;
+  /* Add the following to remove the space below the slider */
+  margin-bottom: 0;
+}
+
+.slide {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  animation: slideshow 18s linear infinite;
+}
+
+.slide img {
+  height: 70px;
+  padding: 0 30px 0 30px;
+}
+
+@keyframes slideshow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.slider::before,
+.slider::after {
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  content: "";
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: 2;
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.logoo {
+  opacity: 0.2;
+  width: 250px;
+  height: auto;
+  margin-left: 500px;
+  margin-top: 300px;
+  margin-bottom: 0px;
+  position: absolute;
+  top: 90px;
+}

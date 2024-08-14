@@ -1,0 +1,409 @@
+
+ 
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#ffff;
+    /* background-color:rgb(215, 215, 215); */
+  }
+  
+  /* header {
+    background-color: #e09f38;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .name-logo
+  {
+    justify-self: left;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .search-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* .search-input {
+    padding: 8px 30px 8px 10px; /* Add appropriate padding to accommodate the icon */
+    /* border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px; /* Set appropriate width for the icon */
+    /* height: 20px; /* Set appropriate height for the icon */
+    /* background-image: url('/myimages/search.jpeg'); */
+    /* background-size: cover; */
+    /* border: none; */
+    /* cursor: pointer; */
+  /* } */
+  
+  
+   /* .login a {
+    padding: 5px 10px;
+    margin-left: 10px;
+    background-color: #04a567;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  } 
+    */
+/* ... Other styles ... */
+
+/*------about section-------*/
+.about{
+  /* margin:2px; */
+  padding-bottom:5%;
+  
+  /* border:1px solid black; */
+  
+
+
+}
+.about h1{
+  /* padding-top:2%; */
+  text-align:center;
+  color:#152F42;
+  text-transform:uppercase;
+  text-shadow: #666;
+  text-decoration: none;
+  background-color:rgb(228, 241, 252);
+  /* padding-top:4%; */
+ 
+  font-size:2rem;
+  
+}
+.about .content{
+  display:flex;
+  /* border:1px solid black; */
+  margin:0% 5% 0% 5%;
+  margin-top:4%;
+
+
+}
+.about_img img{
+  float:left;
+  width:60%;
+  height:100%;
+  border-radius:3%;
+  box-shadow: 0 7px 5px rgba(0, 0, 0, 0.1);
+  /* margin-left:4%; */
+  /* border:1px solid blue; */
+  text-align:center;
+  margin-left:10%;
+  transition:transform 1.25s;
+
+}
+.about_img img:hover{
+
+
+  /* margin-left:13%; */
+  transform:scale(103%);
+
+
+}
+.box{
+  float:right;
+  /* margin-left:50%; */
+  width:50%;
+
+  /* border:1px solid red; */
+  text-align:left;
+  font-weight:bold;
+  font-size:16px;;
+  font-family:'Poppins', sans-serif;
+
+}
+.box p{
+  /* color:#e09f38;
+   */
+   
+   color:black;
+  
+}
+.box button{
+  font-size:15px;
+  font-weight:semibold;
+  padding:2%;
+  color:white;
+  border:white 2px solid;
+  background-color:#a86800;
+  border-radius:5px;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.1);
+  /* margin-top:0px; */
+}
+.box button:hover{
+  background-color:#7d5b23;
+}
+.box button a{
+  text-decoration: none;
+  color:white;
+}
+
+
+
+/* updates section */
+
+.updates {
+  padding-top:20px;
+  padding-bottom:20px;
+  /* background-color:al; */
+  /* border:solid 1px red; */
+  
+}
+.updates h2{
+  /* text-align:center; */
+  /* color:#1a3a51; */
+  text-align:center;
+  color:#152F42;
+  text-transform:uppercase;
+  text-shadow: #666;
+  text-decoration: none;
+  font-size:2rem;
+  background-color:rgb(228, 241, 252);
+
+  /* border:solid 1px  black; */
+  
+}
+
+#cardContainer {
+  /* width:300px; */
+  display:inline-flex;
+  gap: 20px;
+  height:fit-content;
+   /* border:solid 1px  black; */
+   margin:4px;
+
+ 
+
+}
+.updates .container{
+  box-shadow: 0 7px 5px rgba(0, 0, 0, 0.1);
+  border-radius:20px;
+  margin:3.5%;
+  padding: 27px;
+  background-color:snow;
+  
+     
+}
+
+.card {
+  /* font-family:serif; */
+  border-left: solid 5px #a86800;
+  justify-content:center;
+  font-size: 13px; 
+  /* margin-left:5px; */
+  text-align: left;
+    background-color: #fff;
+    /* background-color: #; */
+  width:300px;
+  height:max-content;
+  border-radius:2%;
+  /* width:fit-content;/ */
+  padding:fit-content;
+  padding-left:5%;
+  padding-right:2%;
+  box-shadow: 0 7px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+   /* border:solid 1px  pink; */
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+.card h5{
+  font-size:13px;
+  margin-top:1px;
+  /* border: 1px solid blue; */
+
+}
+
+.card h3 {
+  margin: 10px 0;
+/* border: 1px solid green; */
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+  /* display:inline-block; */
+  /* border:solid 1px red; */
+  /* margin-top:none; */
+  
+  
+
+}
+  
+  /* ... other styles ... */
+
+  /*contact--------------------------------------------------------*/
+ .contact .container{
+   margin-left:8%;
+   margin-right:8%;
+   margin-bottom:5%;
+   margin-top:4%;
+ 
+   
+
+ }
+ .contact h2{
+  text-align:center;
+  color:#152F42;
+  text-transform:uppercase;
+  text-shadow: #666;
+  text-decoration: none;
+  margin-top:3%;
+  font-size:2rem;
+  background-color:rgb(228, 241, 252);
+  /* border:1px solid red; */
+
+ }
+  .help-like-form {
+  
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+  
+  }
+  
+  
+  /* Help desk form styling */
+  form {
+    background-color:#759eb8;
+    /* background-color:#ffff; */
+    /* border: 1px solid #ccc; */
+    /* padding: 20px; */
+    border-radius: 2px;
+    padding:6%;
+    border-radius:10px;
+    box-shadow: 0 7px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 3px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #152F42;;
+    border-radius: 5px;
+    border:none;
+    font-size: 14px;
+    background-color: rgb(246, 251, 255);
+  }
+  
+  form textarea {
+    resize: vertical;
+  }
+  
+  form input[type="submit"] {
+    background-color: #e09f38;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top:2%;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #a86800;
+  }
+  
+
+/* Slider Styles */
+.slider {
+    overflow: hidden;
+    /* border:1px red solid; */
+    /* padding-bottom:2%; */
+  }
+  
+  .slider-container {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide {
+    flex: 0 0 100%; /* Each slide takes the full width of the slider container */
+  }
+  
+  .slide img {
+    width: 100%;
+    height:100%;
+    /* You can add more styles like height, object-fit, etc., depending on your design */
+  }
+  footer {
+    background-color: #e09f38;
+    color: #fff;
+    text-align: center;
+    padding: 3px 0;
+  }
+  
+  .contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-links {
+    list-style: none;
+    display: flex;
+    margin: 10px 0;
+  }
+  
+  .social-links li {
+    margin: 0 10px;
+  }
+  
+  .social-links a {
+    color: #fff;
+    text-decoration: none;
+  }

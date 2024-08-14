@@ -1,0 +1,366 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  
+  header {
+    background-color: #e09f38;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .name-logo
+  {
+    justify-self: left;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .search-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .search-input {
+    padding: 8px 30px 8px 10px; /* Add appropriate padding to accommodate the icon */
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px; /* Set appropriate width for the icon */
+    height: 20px; /* Set appropriate height for the icon */
+    background-image: url('/myimages/search.jpeg');
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  .login a {
+    padding: 5px 10px;
+    margin-left: 10px;
+    background-color: #04a567;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto
+    }
+    .mySlides {
+      display: none;
+    }
+  }
+    
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+  
+main {
+  display: flex;
+  flex-direction: column;
+ 
+  align-items: center;
+  padding: 20px;
+}
+
+
+.help-like-form {
+  
+  flex: 1;
+  min-width: 300px;
+  margin-right: 20px;
+}
+
+
+/* Help desk form styling */
+form {
+  background-color: #d8eafe;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 2px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 3px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form input[type="submit"] {
+  background-color: #e09f38;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #00cd0a;
+}
+
+
+/* Your existing footer CSS goes here */
+
+
+
+
+.wrapper {
+  width: 100vw;
+  height: 25vh;
+  padding-top: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.slider {
+  padding-top: 0%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  width: 1500px;
+  height: 100px;
+  position: relative;
+  background: white;
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  overflow: hidden;
+  /* Add the following to remove the space below the slider */
+  margin-bottom: 0;
+}
+
+.slide {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  animation: slideshow 18s linear infinite;
+}
+
+.slide img {
+  height: 70px;
+  padding: 0 30px 0 30px;
+}
+
+@keyframes slideshow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.slider::before,
+.slider::after {
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  content: "";
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: 2;
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.logoo {
+  opacity: 0.2;
+  width: 250px;
+  height: auto;
+  margin-left: 500px;
+  margin-top: 300px;
+  margin-bottom: 0px;
+  position: absolute;
+  top: 90px;
+}
+footer {
+  background-color: #e09f38;
+
+  color: #fff;
+  padding: 25px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.footer-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-icon {
+  margin: 0 5px;
+}
+
+.social-icon img {
+  width: 20px;
+  height: 20px;
+}
+form {
+  width:75%;
+}
+
+label {
+  display: block;
+  width:75%;
+  margin-bottom: 5px;
+ height: 50%;
+}
+
+.container {
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+button.accordion {
+  width: 100%;
+ 
+  background-color: rgb(213, 226, 244);
+  border-color: #5c5b5b;
+  border: line;
+  outline: none;
+  text-align: left;
+  padding: 15px 20px;
+  font-size: 18px;
+  color: #444;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+button.accordion:after {
+  content: '\f055';
+  font-family: "fontawesome";
+  font-size: 14px;
+  float: right;
+}
+
+button.accordion.is-open:after {
+  content: '\f056';
+}
+
+button.accordion:hover, button.accordion.is-open {
+  background-color: #7cd1f8;
+}
+
+.accordion-content {
+  background-color: rgb(207, 238, 247);
+  border-left: 1px solid whitesmoke;
+  border-right: 1px solid whitesmoke;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+}

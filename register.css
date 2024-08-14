@@ -1,0 +1,182 @@
+*:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(#c9f6ff, #243b55);
+}
+
+.glass-form {
+  margin-top: 40px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center; /* Add this to center the logo horizontally */
+}
+
+.glass-form h2 {
+  text-align: center;
+  color: #060214;
+  margin-bottom: 30px;
+}
+
+
+.userInputBox {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.userInputBox label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 0;
+  font-size: 16px;
+  color: #111111;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.userInputBox input {
+  width: 100%;
+  background: transparent;
+  outline: none;
+  border: none; 
+  color: #111112;
+  border-bottom: 2px solid #080707; /* Adjust the border-bottom to 2px to make it more visible */
+  padding: 10px 0; /* Add a slight padding to adjust the text position within the input */
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+
+.userInputBox input:focus ~ label,
+.userInputBox input:valid ~ label {
+  top: -20px;
+  font-size: 16px;
+  color: #16191a;
+}
+
+.glass-form a {
+  position: relative;
+  color: #081414;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border: 0;
+  overflow: hidden;
+  border-radius: 5px;
+  transition: .5s;
+}
+
+.glass-form a:hover {
+  color: #030303;
+  background: #39d4fb;
+  box-shadow: 0 0 5px #39d4fb,
+              0 0 25px #39d4fb,
+              0 0 50px #39d4fb,
+              0 0 100px #39d4fb;
+}
+
+.glass-form a span {
+  position: absolute;
+}
+
+.glass-form a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(90deg, transparent, #39d4fb);
+  animation: toplineAnimation 1s linear infinite;
+}
+
+@keyframes toplineAnimation {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+
+.glass-form a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(180deg, transparent, #39d4fb);
+  animation: rightlineAnimation 1s linear infinite;
+  animation-delay: .25s;
+}
+
+@keyframes rightlineAnimation {
+  0% {
+    top: -100%;
+  }
+  50%, 100% {
+    top: 100%;
+  }
+}
+
+.glass-form a span:nth-child(3) {
+  right: -100%;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(270deg, transparent, #39d4fb);
+  animation: bottomlineAnimation 1s linear infinite;
+  animation-delay: .5s;
+}
+
+@keyframes bottomlineAnimation {
+  0% {
+    right: -100%;
+  }
+  50%, 100% {
+    right: 100%;
+  }
+}
+
+.glass-form a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(360deg, transparent, #58d7f7);
+  animation: leftlineAnimation 1s linear infinite;
+  animation-delay: .75s;
+}
+
+@keyframes leftlineAnimation {
+  0% {
+    bottom: -100%;
+  }
+  50%, 100% {
+    bottom: 100%;
+  }
+  
+}
+
+
+.logo {
+  opacity: 0.2;
+  width: 250px;
+  height: auto;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 85px;
+  left: 50%;
+  transform: translateX(-50%); /* Center the logo horizontally */
+}
